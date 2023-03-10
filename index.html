@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Poppins:wght@400;700&family=Quicksand:wght@400;700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container container-header">
+      <div class="header-box">
+        <a href="#">
+          <img src="./imgs/Vector.svg" alt="logo" class="header-logo">
+        </a>
+        <h1 class="primary-heading">Greens</h1>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#bestsellers" class="nav__link">Bestsellers</a>
+          </li>
+          <li class="nav__item">
+            <a href="#article" class="nav__link">Articles</a>
+          </li>
+          <li class="nav__item">
+            <a href="#order-now" class="nav__link">Order now</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-nav">
+        <svg class="open-nav" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+        <svg class="close-nav" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section-hero">
+      <div class="container">
+        <div class="hero-box">
+          <div class="hero-box-content">
+            <h2 class="secondary-heading">Are you ready to start a new way of life with our <span><em>nutritious
+                  goods</em></span>?
+            </h2>
+            <a href="#" class="btn-action">I'm ready!</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-article" id="article">
+      <div class="container">
+        <div class="heading-article margin-bottom-small">
+          <h3 class="tertiary-heading padding-big">Recommended articles </h3>
+        </div>
+        <article class="article-box">
+          <div class="article-box-img">
+            <img src="./imgs/carrots-gd88575c00_1920 1.png" alt="carrots" class="article-box__img">
+          </div>
+          <div class="article-box-content">
+            <h4 class="quaternary-heading">Benefits of Eating Carrots</h4>
+            <p class="article-box__text">
+              The article covers the nutritional content of carrots and the impact on various bodily functions such as
+              eye, skin health and digestion. <br>
+              The article also mentions the potential benefits for <strong>weight management</strong> and <strong>the
+                prevention of chronic
+                diseases</strong>.
+            </p>
+            <a href="" class="btn-action btn-action--article margin-auto-right">Read more</a>
+          </div>
+        </article>
+        <article class="article-box">
+          <div class="article-box-content">
+            <h4 class="quaternary-heading text-right">Potatoes? Our new friend</h4>
+            <p class="article-box__text text-right">
+              Potatoes are a staple food in many parts of the world and are considered a <strong>nutritious</strong> and
+              <strong>affordable</strong>
+              source of carbohydrates. They are also a good source of <strong>vitamins</strong>,
+              <strong>minerals</strong> and <strong>fiber</strong>.
+            </p>
+            <a href="" class="btn-action btn-action--article margin-auto-left">Read more</a>
+          </div>
+          <div class="article-box-img">
+            <img src="./imgs/potatoes-gc46cbe3e4_1920 1.png" alt="potato" class="article-box__img">
+          </div>
+        </article>
+        <article class="article-box">
+          <div class="article-box-img">
+            <img src="./imgs/avocado_article.png" alt="avocado" class="article-box__img">
+          </div>
+          <div class="article-box-content">
+            <h4 class="quaternary-heading">Avocado? Watch out for this sneaky beast</h4>
+            <p class="article-box__text">
+              Avocados are <strong>high in calories</strong>. One medium-sized avocado contains approximately 250
+              calories, making it a relatively high-calorie food. This can be an issue for those who are trying to lose
+              weight or control their calorie intake.
+            </p>
+            <a href="" class="btn-action btn-action--article margin-auto-right">Read more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-bestsellers" id="bestsellers">
+      <div class="container">
+        <div class="heading-article margin-bottom-small">
+          <h3 class="tertiary-heading padding-big">Bestsellers</h3>
+        </div>
+        <div class="bestsellers-container">
+          <div class="product-card">
+            <div class="product-card-box-img">
+              <img src="./imgs/carrots-g7c67492dd_1920 1.png" alt="carrot" class="product-card__img">
+            </div>
+            <div class="product-card-content">
+              <p class="product-card__type">Vegetables</p>
+              <p class="product-card__name">Natural carrot</p>
+              <p class="product-card__price">2$ <span>3$</span> </p>
+              <a href="#" class="btn-action btn-action--article">Add to cart</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-box-img">
+              <img src="./imgs/potatoes-g23a11167f_1920 1.png" alt="potato" class="product-card__img">
+            </div>
+            <div class="product-card-content">
+              <p class="product-card__type">Artifical Vegetables</p>
+              <p class="product-card__name">Artifical potato</p>
+              <p class="product-card__price">15$</p>
+              <a href="#" class="btn-action btn-action--article">Add to cart</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-box-img">
+              <img src="./imgs/avocado-g61215959a_1920 1.png" alt="avocado" class="product-card__img">
+            </div>
+            <div class="product-card-content">
+              <p class="product-card__type">Evil Vegetables</p>
+              <p class="product-card__name">Evil Avo</p>
+              <p class="product-card__price">150$</p>
+              <a href="#" class="btn-action btn-action--article">Add to cart</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-box-img">
+              <img src="./imgs/celery-gaa451cd63_640 1.png" alt="celery" class="product-card__img">
+            </div>
+            <div class="product-card-content">
+              <p class="product-card__type">Vegetables</p>
+              <p class="product-card__name">Celery</p>
+              <p class="product-card__price">8$ <span>10$</span> </p>
+              <a href="#" class="btn-action btn-action--article">Add to cart</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-box-img">
+              <img src="./imgs/parsley-gc91d1d943_1280 1.png" alt="parsley" class="product-card__img">
+            </div>
+            <div class="product-card-content">
+              <p class="product-card__type">Vegetables</p>
+              <p class="product-card__name">Old good parsley</p>
+              <p class="product-card__price">0.5$</p>
+              <a href="#" class="btn-action btn-action--article">Add to cart</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-box-img">
+              <img src="./imgs/sliced-lemon-gcf8d997fc_1920 1.png" alt="lemon" class="product-card__img">
+            </div>
+            <div class="product-card-content">
+              <p class="product-card__type">Citrus</p>
+              <p class="product-card__name">Lemon</p>
+              <p class="product-card__price">5$</p>
+              <a href="#" class="btn-action btn-action--article">Add to cart</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-box-img">
+              <img src="./imgs/apple-g14207f0b3_1920 1.png" alt="apple" class="product-card__img">
+            </div>
+            <div class="product-card-content">
+              <p class="product-card__type">Fruits</p>
+              <p class="product-card__name">Apple</p>
+              <p class="product-card__price">7$</p>
+              <a href="#" class="btn-action btn-action--article">Add to cart</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-box-img">
+              <img src="./imgs/red-beets-ge53d568a2_1920 1.png" alt="carrot" class="product-card__img">
+            </div>
+            <div class="product-card-content">
+              <p class="product-card__type">Vegetables</p>
+              <p class="product-card__name">Red beets</p>
+              <p class="product-card__price">100$ <span>105$</span> </p>
+              <a href="#" class="btn-action btn-action--article">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-form-order" id="order-now">
+      <div class="container">
+        <div class="heading-article margin-bottom-small">
+          <h3 class="tertiary-heading padding-big">Order now</h3>
+        </div>
+        <div class="order-container">
+
+          <div class="order-container-content">
+            <h4 class="quaternary-heading margin-bottom-small">If you want us to deliver healthy and fresh fruits and
+              vegetables for you,
+              right to
+              your
+              door, don't wait - place your order below.
+            </h4>
+            <form class="order-form">
+              <fieldset class="gender">
+                <div>
+                  <input type="radio" name="gender" id="Ms">
+                  <label for="Ms">Ms.</label>
+
+                </div>
+                <div>
+                  <input type="radio" name="gender" id="Mr">
+                  <label for="Mr">Mr.</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="contact-info">
+                <legend>1. Contact information</legend>
+                <div class="contanct-info-box">
+                  <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+                  </div>
+                  <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+                  </div>
+                  <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                  </div>
+                  <div>
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" name="e-mail" id="e-mail">
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="delivery-info">
+                <legend>2. Delivery method</legend>
+                <div class="delivery-info-box">
+                  <div>
+                    <label for="street">Street address</label>
+                    <input type="text" name="street" id="street">
+                  </div>
+                  <div>
+                    <label for="city">Town/City</label>
+                    <input type="text" name="city" id="city">
+                  </div>
+                  <div>
+                    <label for="postcode">Postcode</label>
+                    <input type="text" name="postcode" id="postcode">
+                  </div>
+                  <div>
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country">
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="comments">
+                <legend>3. If you have any comments regarding order, leave them below</legend>
+                <textarea></textarea>
+              </fieldset>
+              <button class="submit-btn">Continue to payment</button>
+            </form>
+          </div>
+          <div class="order-container-img">
+            <img src="./imgs/iStock-1091697242.jpg" alt="box of vegetablex" class="order-container__img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="logo-box">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="./imgs/Vector.svg" alt="logo" class="header-logo">
+            </a>
+            <h2 class="secondary-heading">Greens</h2>
+          </div>
+          <div class="social-logos">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+              </svg>
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+              </svg>
+            </a>
+          </div>
+          <p class="copyrights">Copyright &copy; 2023 by Greens, Inc. All rights reserved.</p>
+        </div>
+
+        <div class="address-box">
+          <p class="address-heading">Contact us</p>
+          <p class="address">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+          <p class="contact">415-201-6370
+            hello@greens.com</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
