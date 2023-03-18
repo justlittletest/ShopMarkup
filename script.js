@@ -3,18 +3,14 @@ const nav = document.querySelector('.nav');
 const links = document.querySelectorAll('.nav__link');
 const header = document.querySelector('.header');
 
-navBtn.addEventListener('click', function () {
-	nav.classList.toggle('open-navigation');
-	document.documentElement.classList.toggle('scrolY-disabled');
-});
+// links.forEach(link =>
+// 	link.addEventListener('click', function () {
+// 		nav.classList.remove('open-navigation');
+// 		document.documentElement.classList.remove('scrolY-disabled');
+// 	})
+// );
 
-links.forEach(link =>
-	link.addEventListener('click', function () {
-		nav.classList.remove('open-navigation');
-		document.documentElement.classList.remove('scrolY-disabled');
-	})
-);
-
+/// OBSERVER
 const headerHeight = header.getBoundingClientRect().height;
 const options = {
 	root: null,
@@ -24,7 +20,6 @@ const options = {
 
 const heroSectionObserver = new IntersectionObserver(function (entries, observer) {
 	const [entry] = entries;
-	console.log(entry);
 	if (!entry.isIntersecting) {
 		header.classList.add('sticky');
 		document.querySelector('.section-hero').style.marginTop = `${headerHeight}px`;
@@ -35,3 +30,20 @@ const heroSectionObserver = new IntersectionObserver(function (entries, observer
 }, options);
 
 heroSectionObserver.observe(document.querySelector('.section-hero'));
+
+/// PADDING TOP SCROLL
+document.documentElement.style.setProperty('--scroll-padding', headerHeight + 'px');
+
+/// LISTENERS
+
+nav.addEventListener('click', function (e) {
+	if (e.target.closest('.nav__item')) {
+		nav.classList.remove('open-navigation');
+		document.documentElement.classList.remove('scrolY-disabled');
+	}
+});
+
+navBtn.addEventListener('click', function () {
+	nav.classList.toggle('open-navigation');
+	document.documentElement.classList.toggle('scrolY-disabled');
+});
