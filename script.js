@@ -11,28 +11,38 @@ const header = document.querySelector('.header');
 // );
 
 /// OBSERVER
-const headerHeight = header.getBoundingClientRect().height;
-const options = {
+let headerHeight = header.getBoundingClientRect().height;
+let options = {
 	root: null,
 	threshold: 0,
 	rootMargin: `-${headerHeight}px`,
 };
 
-const heroSectionObserver = new IntersectionObserver(function (entries, observer) {
+let heroSectionObserver = new IntersectionObserver(function (entries, observer) {
 	const [entry] = entries;
 	if (!entry.isIntersecting) {
-		header.classList.add('sticky');
-		document.querySelector('.section-hero').style.marginTop = `${headerHeight}px`;
+		document.body.classList.add('sticky');
 	} else {
-		header.classList.remove('sticky');
-		document.querySelector('.section-hero').style.marginTop = `0px`;
+		document.body.classList.remove('sticky');
 	}
 }, options);
 
 heroSectionObserver.observe(document.querySelector('.section-hero'));
 
+const styleScrollPaddingTop = function () {
+	const header = document.querySelector('.header');
+	headerHeight = header.getBoundingClientRect().height;
+	document.documentElement.style.setProperty('--scroll-padding', headerHeight + 'px');
+	options.rootMargin = `-${headerHeight}px`;
+	console.log(options);
+	heroSectionObserver.unobserve(document.querySelector('.section-hero'));
+	heroSectionObserver.observe(document.querySelector('.section-hero'));
+};
+
+styleScrollPaddingTop();
+
 /// PADDING TOP SCROLL
-document.documentElement.style.setProperty('--scroll-padding', headerHeight + 'px');
+window.addEventListener('resize', styleScrollPaddingTop);
 
 /// LISTENERS
 

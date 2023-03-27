@@ -137,12 +137,17 @@ body {
 
 .header {
 	position: relative;
+	height: 8rem;
 	color: var(--font-color);
 	font-family: var(--merri-font);
 	font-weight: 400;
 }
 
 .sticky {
+	padding-top: 8rem;
+}
+
+.sticky .header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -638,10 +643,6 @@ a svg:hover {
 
 	.padding-big {
 		padding: 3.6rem 20rem 2.5rem;
-	}
-
-	.header {
-		height: 8rem;
 	}
 
 	.nav {
